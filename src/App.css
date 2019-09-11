@@ -1,0 +1,44 @@
+.App {
+  padding-top: 80px;
+}
+
+.App-header {
+	box-shadow: 0px 1px 5px #ccc;
+	background-color: #fff;
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+}
+
+.App-header,
+.App-aside,
+.App-main {
+	box-sizing: border-box;
+}
+
+.App-header,
+.App-aside {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.App-main {
+	padding: 20px;
+}
+
+@media (min-width: 780px) {
+	.App-aside {
+		width: 240px;
+		position: fixed;
+		top: 80px;
+		left: 0;
+		bottom: 0;
+		overflow-y: auto;
+	}
+
+	.App-main {
+		margin-left: 240px;
+	}
+}
